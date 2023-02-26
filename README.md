@@ -18,13 +18,20 @@ There are three steps:
 
 2. Install Jupyter notebook.
 
-    - Install Docker: https://www.docker.com
+    - Install Docker: https://www.docker.com.
+
       Ensure that Docker is running. You might have to restart Docker after restarting your computer.
 
     - Install and start the relevant Docker file: 
       ```
-      docker run -it -p 8888:8888 -v "$(pwd):/lectures" kstarkhwu/f29lp
+      docker run -it -p 8888:8888 -v "$(pwd):/lectures" kstarkhwu/f29lp:latest
       ```
+      
+      - If you have a MacBook, you might need to use the arm64 image instead. 
+        You can check this via ``uname -m``: if it says "amd64" or "x86_64" use the command above. If it says "arm64", run
+        ```
+        docker run -it -p 8888:8888 -v "$(pwd):/lectures" kstarkhwu/f29lp:arm64
+        ```
 
     - In there, run: 
 
@@ -32,9 +39,9 @@ There are three steps:
       jupyter notebook --ip=0.0.0.0
       ```
 
-      and then the link appearing should be openable in a browser.
+      and then the link appearing starting with ``http://127.0.0.1`` should be openable in a browser.
 
-    - You'll want to make copies of all files you want to work on to avoid later merge conflicts.
+    - You'll want to make copies of all files you want to work on to avoid merge conflicts later.
 
 ## Running the Notebook Subsequent Times
 
@@ -58,7 +65,7 @@ There are three steps:
       jupyter notebook --ip=0.0.0.0
       ```
 
-      and then the link appearing should be openable in a browser.
+      and then the link appearing starting with ``http://127.0.0.1`` should be openable in a browser.
 
       
 
@@ -86,4 +93,4 @@ You hence only have to:
    ```
 
    and then the link appearing should be openable in a browser.
-    You'll want to make copies all files you want to work on to avoid later merge conflicts.
+    You'll want to make copies all files you want to work on to avoid merge conflicts later.
