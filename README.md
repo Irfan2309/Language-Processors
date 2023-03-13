@@ -117,3 +117,6 @@ Use the PowerShell or Linux Bash Shell. The old DOS command prompt does not supp
 - *Cloning the GitLab repo fails.* GitLab needs to ensure that you are a student at HWU. Ensure to have registered an SSH key on the machine you are using (see e.g. https://docs.gitlab.com/ee/user/ssh.html) or download and unpack the repo manually.
 
 - *I tried everything and did not get the Jupyter Notebook to run.* Please write to the lab helpers or come to me after the lecture - we will try to find a solution. You should still be able to run the Jupyter notebooks on the Linux lab computers.
+
+- If you find no way to install Docker on your own computer, Ben Agnew describes in his branch how he set up connecting to the lab computers via X2go: 
+   https://gitlab-student.macs.hw.ac.uk/ba2005/F29LP/-/tree/x2goSSH location: git@gitlab-student.macs.hw.ac.uk:ba2005/F29LP.git
