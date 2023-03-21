@@ -1,7 +1,7 @@
 # Questions About CW 
 
-These is a document with questions I got about the coursework. 
-To be fair/that everyone has the same information, questions and answers are published here: 
+This is a document with questions I got about the coursework. 
+To be fair/that everyone has the same information, questions and answers that are not specific to one project are published here: 
 
 - What does "that is not already a keyword" mean for identifiers? - See the slide on tokens in the Lexical Analysis slides:
 A keyword is any word representing the structure of a program; so it is all lexemes reserved for this - which of course need separate tokens later on.
